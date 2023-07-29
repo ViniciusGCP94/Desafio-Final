@@ -1,0 +1,412 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Roboto:wght@400;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+}
+
+/* INÍCIO HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 15vh;
+    padding: 0px 80px;
+    font-family:'Roboto', serif;
+    font-size: 20px;
+    color: #ffffff;
+    border: 1px solid red;
+    background-color: #252525;
+}
+
+header .logotipo {
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logotipo figure img {
+    width: 5vw;
+}
+
+.socials {
+    width:10vw ;
+    align-items: center;
+}
+
+.socials figure{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socials figure a img {
+    width: 30px;
+}
+
+/* INÍCIO MAIN */
+
+
+.welcome {
+    width: 100vw;
+    height: 140vh;
+    padding-top: 15vh;
+    background-image: url("/Assets/images/main/welcome/cachorro-branco.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome h1 {
+    width: 35vw;
+    font-family: 'Roboto', serif;
+    font-size: 51px;
+    font-weight: bold;
+    text-align: center;
+    color: #F4F2F3;
+}
+
+.welcome figure img {
+    margin-top: 10vh;
+}
+
+.groom {
+    width: 100vw;
+    height: 120vh;
+    padding-left: 10vw;
+    background-color: #F4F2F3;
+    background-image: url("/Assets/images/main/tosa/Interseção\ 16.png");
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    background-position:70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.groom h2 {
+    font-family: 'Roboto', serif;
+    font-size: 51px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.groom p {
+    width: 30vw;
+    font-family: 'Roboto', serif;
+    font-size: 27px;
+    line-height: 42px;
+}
+
+.groom button {
+    margin-top: 8vh;
+    padding: 15px 30px;
+    font-family: 'Roboto', serif;
+    font-size: 27px;
+    font-weight: bold;
+    color: #F4F2F3;
+    border: 1px solid #3A342F;
+    border-radius: 44px;
+    background-color: #3A342F;
+}
+
+.stewardship {
+    width: 100vw;
+    height: 140vh;
+    padding-right: 10vw;
+    background-image:linear-gradient(#CD2D5D) ;
+    background-image: url("/Assets/images/main/saudavel/Grupo\ 480@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position:left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.stewardship h2 {
+    font-family: 'Roboto', serif;
+    font-size: 51px;
+    font-weight: bold;
+    text-align: center;
+    color: #F4F2F3;
+}
+.stewardship p {
+    width: 30vw;
+    margin-right: 3.6vw;
+    font-family: 'Roboto', serif;
+    font-size: 27px;
+    line-height: 42px;
+    color: #F4F2F3;
+}
+
+.stewardship button {
+    margin-top: 8vh;
+    margin-right: 17vw;
+    padding: 15px 30px;
+    font-family: 'Roboto', serif;
+    font-size: 27px;
+    font-weight: bold;
+    color: #3A342F;
+    border: 1px solid #F4F2F3;
+    border-radius: 44px;
+    background-color:  #F4F2F3;
+}
+
+.supporters{
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.supporters h2 {
+    font-size: 20px;
+    font-family: 'Roboto', serif;
+    font-style: italic;
+    color: #CD2D5D;
+}
+
+.supporters figure {
+    width: 30vw;
+    justify-content: space-evenly;
+}
+
+.supporters figure img {
+    padding-left: 30px;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100vw;
+    height: 50vh;
+    background-color: #CD2D5D;
+    display: flex;
+    align-items: center;
+}
+
+.logo-socials{
+    display: none;
+}
+
+.container-listas{
+    width: 60%;
+    display: flex;
+    margin-left: 10vw;
+    justify-content: space-between;
+}
+
+.container-listas .lista ul {
+    list-style: none;
+}
+
+.lista h3{
+    font-size: 24px;
+    font-family: 'Roboto', serif;
+    font-weight: bold;
+    color: #F4F2F3;
+}
+
+.lista ul {
+    margin-top: 5vh;
+    line-height: 26px;
+}
+
+.lista ul a {
+    text-decoration: none;
+}
+
+.lista ul a li {
+    font-size: 14px;
+    font-family: 'Roboto', serif;
+    color: #F4F2F3;
+}
+
+@media (max-width: 425px){
+
+    header {
+        padding: 0 20px;
+    }
+
+    header .logotipo{
+        width: 38vw;
+    }
+
+    .logotipo figure img {
+        width: 13vw;
+    }
+
+    .insta{
+        display: none;
+    }
+
+    .Youtube{
+        display: none;
+    }
+
+    .socials figure a img {
+        width: 40px;
+    }
+
+    .welcome{
+        height: 130vh;
+        background-image:url('/Assets/images/mobile/Grupo\ 485.png') ;
+        background-size: cover;
+    }
+
+    .welcome h1 {
+        width: 80vw;
+        font-size: 38px;
+    }
+
+    .groom {
+        height: 150vh;
+        padding-left: 8vw;
+        padding-top: 15vh;
+        background-image: url('/Assets/images/mobile/Grupo\ 484.png');
+        background-size: 100% 100%;
+        justify-content: flex-start;
+    }
+
+    .groom h2 {
+        font-size: 30px;
+    }
+
+    .groom p {
+        width: 68vw;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .groom button {
+        margin-top: 5vh;
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .stewardship {
+        background-image: url('/Assets/images/mobile/Grupo\ 496.png');
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 8vw;
+        padding-top: 15vh;
+    }
+
+    .stewardship h2{
+        font-size: 30px;
+    }
+
+    .stewardship p {
+        width: 68vw;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .stewardship button{
+        margin-top: 5vh;
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .supporters {
+        flex-direction: column;
+    }
+
+    .supporters h2 {
+        font-size: 16px;
+    }
+
+    .supporters figure {
+        width: 80vw;
+        justify-content: space-between;
+    }
+
+    .supporters figure img {
+        width: 45%;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 140vh;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 80px;
+    }
+
+    .logo-socials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-socials .logo-footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50vw;
+    }
+
+    .logo-footer figure img{
+        width: 13vw;
+    }
+
+    .logo-footer p {
+        font-size: 25px;
+        color: #F4F2F3;
+    }
+
+    .socials-footer{
+        width:40vw ;
+        margin-top: 20px;
+    }
+
+    .socials-footer figure {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .socials-footer figure img {
+        width: 8vw;
+    }
+
+    .container-listas {
+        height: 110vh;
+        margin-left: 0;
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-listas .lista h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .container-listas ul {
+        margin-top: 1vh;
+    }
+
+    .container-listas ul li {
+        text-align: center;
+    }
+
+}
+    
+
